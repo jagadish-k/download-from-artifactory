@@ -1,6 +1,6 @@
 {
   "name": "download-from-artifactory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,13 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/jagadish-k/download-from-artifactory.git"
   },
-  
   "author": "",
   "license": "MIT",
   "homepage": "https://github.com/jagadish-k/download-from-artifactory#readme",
   "dependencies": {
     "@actions/core": "^1.2.5",
-    "@aws-sdk/client-s3": "^3.49.0"
+    "aws-sdk": "^2.1068.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",
