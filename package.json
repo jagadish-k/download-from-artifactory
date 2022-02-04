@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "download-from-artifactory",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -11,21 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/jagadish-k/download-from-artifactory.git"
   },
-  "keywords": [
-    "GitHub",
-    "Actions",
-    "JavaScript"
-  ],
+  
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
-  },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/jagadish-k/download-from-artifactory#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "@aws-sdk/client-s3": "^3.49.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",

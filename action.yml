@@ -1,13 +1,27 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Download Zip from Artifactory'
+description: 'Download a file from S3 Artifactory'
+
+branding:
+  icon: download-cloud
+  color: gray-dark
+
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  aws-region:
+    required: false
+    default: 'ap-south-1'
+  aws-access-key-id:
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  aws-secret-access-key:
+    required: true
+  artifactory-bucket:
+    description: "The S3 bucket where the files will be downloaded from."
+    required: true
+  app-path:
+    required: true
+  artifact:
+    required: true
+    description: "Versioned zip to be downloaded."
+
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
