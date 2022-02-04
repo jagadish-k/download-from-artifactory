@@ -4,7 +4,7 @@
 ...
 jobs:
   - name: Download from Artifactory
-    uses: jagadish-k/download-from-artifactory@v1.0.0
+    uses: jagadish-k/download-from-artifactory@v1.0.2
     with:
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
